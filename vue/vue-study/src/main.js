@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
-import router from './router'
+import router from './krouter'
 import store from './store'
 
 Vue.config.productionTip = false
 
+// 4. 在根组件上添加该router实例
 new Vue({
   router,
   store,
