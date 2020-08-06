@@ -8,19 +8,19 @@ export default new Vuex.Store({
     counter: 0
   },
   mutations: {
-    add(state) {
+    add (state) {
       return state.counter++
     }
   },
   actions: {
-    add({commit}) {
+    add ({ commit }) {
       setTimeout(() => {
         commit('add')
       }, 1000)
     }
   },
   getters: {
-    doubleCounter(state) {
+    doubleCounter (state) {
       return state.counter * 2
     }
   },
