@@ -4,7 +4,7 @@ class Store {
   constructor (options) {
     this._mutations = options.mutations
     this._actions = options.actions
-    this._getters = options.getters
+    this._getters = options.getters || {}
     // 创建响应式的state
     // -- 如果这么写有什么坏处，
     // this.state = new _Vue({
